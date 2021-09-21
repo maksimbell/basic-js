@@ -212,19 +212,19 @@ describe('Dream team', () => {
       ]), 'ABDEFGJLMMR');
     });
     it.optional('should handle non-standard cases', () => {
-      assert.equal(createDreamTeam([
-        ['David Abram'],
-        ['Robin Attfield'],
-        'Thomas Berry',
-        ['Paul R.Ehrlich'],
-        'donna Haraway',
-        ' BrIaN_gOodWiN  ',
-        {
-          0: 'Serenella Iovino'
-        },
-        'Erazim Kohak',
-        '  val_plumwood',
-      ]), 'BDETV');
+        assert.equal(createDreamTeam([
+          ['David Abram'],
+          ['Robin Attfield'],
+          'Thomas Berry',
+          ['Paul R.Ehrlich'],
+          'donna Haraway',
+          ' BrIaN_gOodWiN  ',
+          {
+            0: 'Serenella Iovino'
+          },
+          'Erazim Kohak',
+          '  val_plumwood',
+        ]), 'BDETV');
     });
   });
 });
