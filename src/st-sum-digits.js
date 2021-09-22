@@ -13,13 +13,13 @@ import { NotImplementedError } from '../extensions/index.js';
  *
  */
 export default function getSumOfDigits(number) {
-  // let sum;
-  // number = number.toString();
-  // let mult, currentOne;
-  // sum = 0;
-  // for(let j = 0; j<number.length;j++){
-  //   sum+=parseInt(number.charAt(j));
-  // }
+    let sum;
+    number = number.toString();
+    let mult, currentOne;
+    sum = 0;
+    for(let j = 0; j<number.length;j++){
+      sum+=parseInt(number.charAt(j));
+    }
 
-  // return sum.toString().length == 1 ? parseInt(sum): getSumOfDigits(parseInt(number));
+    return sum.toString().length == 1 ? parseInt(sum): getSumOfDigits(parseInt(sum));
 }
